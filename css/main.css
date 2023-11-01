@@ -1,0 +1,392 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.container{
+    margin: auto;
+    max-width: auto;
+    width: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #0B0B3B;
+    color: #ffffff;
+    padding: 1em;
+    height: 280px;
+    border-bottom: 3.5px solid #ff000080;
+    padding-bottom: 10px;
+
+
+    align-items: center;
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: row wrap;
+   
+}
+
+.header-container{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-left: 20%;
+}
+
+.logo{
+    width: 600px;
+    margin-left: -12%;
+}
+
+.nav-container{
+    background-color: #0B0B3B;
+    padding: 1em;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    margin-bottom: 70px;
+
+    padding: 20px;
+
+    margin-top: 12%;
+
+    margin-left: -23%;
+
+}
+
+.nav-container{
+    display: flex;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+}
+
+header nav a{
+    color: #ffffff;
+    padding: 1em;
+    text-transform: uppercase;
+
+}
+
+header nav a:hover{
+    background-color: #ff000080;
+}
+
+.top-links, .bottom-links {
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    background-color:  #ffffff;
+    color:  #0B0B3B;
+    padding: 1.5em;
+    font-size: 16px;
+
+    flex: 1 1 60%;
+
+}
+
+aside{
+    background-color: #0B0B3B;
+
+    flex: 1 1 40%;
+}
+
+section p, section h1{
+    margin-bottom: 1em;
+
+}
+
+#Inicio{
+    background-color: #f7f7f7;
+    color: #0B0B3B;
+    margin-bottom: -22px;
+    justify-content: center;
+}
+
+#Inicio p{
+    font-size: 24px;
+    transform: rotate(-5deg);
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+} 
+
+#Inicio h1{
+    font-size: 32px;
+    color: #fff;
+    background-color: #990000e3;
+    padding: 10px 20px;
+    margin-left: 569px;
+    border-radius: 30px 30px 0 0;
+    transform: rotate(-5deg);
+    display: inline-block;
+    position: relative;
+    margin-top: 50px;
+}
+
+.video-container{
+    background-color: #f7f7f7;
+    color: #0B0B3B;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.video-row{
+    width: 80%;
+    margin-bottom: 60px;
+
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.video{
+    width: 100%;
+}
+
+.video{
+    justify-content: space-around;
+}
+
+.Titulo h2{
+    text-align: center;
+    margin-left: 04%;
+}
+
+video {
+    width: calc(33.33% - 10px); 
+    margin: 5px;
+}
+
+aside ul, aside ol{
+    background-color:  #0B0B3B;
+    color: #ffffff;
+    margin: 1em;
+    padding: 1em;
+    border: solid #ffffff;
+    font-size: 14px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+
+    padding: 25px;
+
+}
+
+aside h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.columna {
+    width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fila {
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.columna img, .fila img {
+    width: 200px;
+    height: 200px;
+}
+
+header img{
+    width: 370px;
+    height: 370px;
+    margin-top: -63px;
+}
+
+
+footer img{
+    width: 220px;
+    height: 220px;
+    margin-top: -16px;
+}
+
+footer p{
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.Texto-arriba{
+    margin-left: 37px;
+}
+
+footer{
+    background-color: #0B0B3B;
+    color: #ffffff;
+    height: 250px;
+    border-top: 3.5px solid #ff000080;
+    padding-top: 5px; 
+    padding: 20px; 
+
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flogo{
+        width: 600px;
+        margin-left: -45%;
+
+        justify-content: center;
+}
+
+.Texto-doble{
+    text-align: center;
+
+    margin-left: -48%;
+}
+
+@media (max-width: 768px){
+    .container{
+        border: none;
+        padding: 10px;
+    }
+    body {
+        border: none;
+        margin: none;
+        padding: none;
+      }
+    header{
+        margin: 0;
+        padding: 0;
+    }
+    header nav{
+        flex-basis: 100%;
+        padding: 0px;
+        margin: 20px;
+
+    }
+    nav a{
+        margin: 10px 0;
+    }
+    h2{
+        padding: 1.5em 0;
+    }
+    header img{
+        margin: -46px;
+        padding: 0;
+
+        justify-content: center;
+    }
+    #Inicio h1{
+        margin: 0;
+        padding: 0;
+
+        font-size: 18.4px;
+
+        margin-top: 3%;
+
+        justify-content: center;
+    }
+    #Inicio p{
+        margin: 0;
+        padding: 0;
+
+        margin-top: 5%;
+
+        font-size: 14px;
+
+        justify-content: center;
+    }
+    #Que_es_el_Skateboarding h1, #Historia h1, #Tipos h1{
+        text-align: center;
+    }
+    footer img{
+        margin: -23px;
+        padding: 2px;
+    }
+    footer{
+        margin: 0;
+        padding: 0;
+
+        justify-content: center;
+    }
+    footer p{
+        margin: 0;
+        padding: 0;
+
+        font-size: 13.3px;
+        flex-direction: column;
+    }
+    .video-container{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .video-row{
+        margin: 0;
+        padding: 0;
+
+        flex-direction: column;
+
+        margin-top: -150%;
+        margin-left: 12%;
+
+        margin: 20%;
+    }
+    .Titulo{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+
+        font-size: 16px;
+    }
+}
+@media (max-width: 479px) {
+    .header-container {
+      flex-direction: column;
+    }
+  
+    .logo {
+      width: 100%;
+    }
+  
+    .nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav ul {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .nav li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+  
+    .nav a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+  }
